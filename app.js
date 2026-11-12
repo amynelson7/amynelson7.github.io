@@ -93,8 +93,8 @@ const projects = {
     category: 'VIDEO CONTENT / EXPERT COLLABORATION',
     title: 'Making technical knowledge teachable.',
     intro: 'For a kettle operator training video series, I worked with engineering stakeholders to turn specialized knowledge into clear, practical content.',
-    role: 'Stakeholder collaboration, scripting, plant production coordination, and editing.',
-    context: 'Valmont · Kettle operator training video series.',
+    role: 'Helped direct the series, with scripting, plant shoot coordination, engineering collaboration, and editing.',
+    context: 'Valmont Coatings · Five-part kettle operator training video series.',
     challenge: 'Subject matter experts hold knowledge that can be difficult to translate for a learning audience. The content needed to preserve technical meaning and give the viewer a clear path through the material.',
     contributions: [
       'Meet with engineering stakeholders to understand the training requirements and gather the right technical input.',
@@ -107,23 +107,23 @@ const projects = {
     tags: ['Subject matter interviews', 'Scriptwriting', 'Video production', 'Editing', 'Technical communication']
   },
   'web': {
-    category: 'WEBSITE CONTENT / CROSS-FUNCTIONAL DELIVERY',
-    title: 'Building a clearer path through the website.',
-    intro: 'I approach web content from the customer’s point of view: what do they need to know, and how quickly can they find it?',
-    role: 'Content planning, copy development, customer journey thinking, and coordination with web and creative teams.',
-    context: 'Valmont Coatings · Website content and customer experience work.',
-    challenge: 'Customers need practical information about locations, capabilities, services, and next steps. Content planning needs to make those answers easy to understand and consistent across the website.',
+    category: 'COMPLETED WEBSITE REVAMP / CUSTOMER EXPERIENCE',
+    title: 'A modern website. A clearer path for prospects.',
+    intro: 'I recently completed a revamp of the Valmont Coatings website, centered on helping prospects get the information they need as quickly as possible.',
+    role: 'Website revamp, content planning, copy development, and coordination with web and creative teams.',
+    context: 'Valmont Coatings · Completed website revamp.',
+    challenge: 'Prospects need clear answers about services, locations, capabilities, and next steps. The website needed a modern experience that made that information easy to find while aligning with the broader Valmont brand.',
     contributions: [
-      'Help organize location and service content around common customer questions, including facility capabilities and contact information.',
-      'Develop and review website copy, page concepts, and supporting content with internal stakeholders.',
-      'Coordinate with creative and web teams to move feedback and content updates toward delivery.'
+      'Organize content and navigation around the information prospects need most.',
+      'Work with web and creative teams toward a clean, modern design aligned with valmont.com.',
+      'Bring together clear copy, clickable paths, and crisp photography to make the experience easy to explore.'
     ],
-    result: 'Customer-focused content planning and cross-functional support for website improvements.',
-    qualifier: 'The website work is ongoing. My broader experience includes support for the launch of an international ecommerce website, with a focus on content and collaboration with creative and web teams.',
-    takeaway: 'Useful content starts with a useful question. When the page is organized around what the visitor is trying to accomplish, its purpose becomes clearer.',
-    tags: ['Web copy', 'Content planning', 'Customer journeys', 'Stakeholder feedback', 'Web team collaboration']
-  }
-};
+    result: 'A completed website revamp with a clean, modern design and a clear focus on helping prospects find useful information quickly.',
+    qualifier: 'The design emphasizes straightforward navigation, crisp photography, and consistency with the broader Valmont brand.',
+    takeaway: 'A strong website makes the next step feel obvious. Clear information, intuitive navigation, and purposeful imagery work together to help prospects move forward.',
+    liveSite: 'https://www.valmontcoatings.com/',
+    tags: ['Website revamp', 'Web copy', 'Customer journeys', 'Brand alignment', 'Cross-functional delivery']
+  }};
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-nav');
@@ -175,6 +175,7 @@ function showProject(id, trigger, syncHash = true) {
     <h2 id="dialog-title">${escapeHTML(project.title)}</h2>
     <p class="dialog-intro">${escapeHTML(project.intro)}</p>
     ${publications}
+    ${project.liveSite ? `<p class="live-site-link"><a class="button button-blue" href="${escapeHTML(project.liveSite)}" target="_blank" rel="noopener noreferrer">Explore www.valmontcoatings.com <span aria-hidden="true">↗</span></a></p>` : ''}
     <div class="dialog-facts"><div><h3>MY CONTRIBUTION</h3><p>${escapeHTML(project.role)}</p></div><div><h3>CONTEXT</h3><p>${escapeHTML(project.context)}</p></div></div>
     <section class="story-section"><h3>The challenge</h3><p>${escapeHTML(project.challenge)}</p></section>
     <section class="story-section"><h3>How I approached it</h3><ul>${project.contributions.map(text => `<li>${escapeHTML(text)}</li>`).join('')}</ul></section>

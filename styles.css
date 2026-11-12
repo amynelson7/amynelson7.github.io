@@ -59,3 +59,40 @@
   .corporate-proof .proof-item strong{font-size:43px;min-width:82px}.corporate-proof .proof-item strong>span{font-size:29px}
   .corporate-proof .proof-item p{font-size:12px}.corporate-proof .metric-context{font-size:10px}
 }
+
+.writing-section{border-top:1px solid var(--line)}
+.writing-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.writing-feature{background:#e5ed9840;border:1px solid var(--line);padding:36px}
+.writing-feature-stories{background:transparent}
+.writing-feature h3{font-size:32px;line-height:1.2;letter-spacing:-1px;font-weight:500;margin:22px 0}
+.writing-feature>p:not(.eyebrow){font-size:14px;line-height:1.85;color:var(--muted);margin:14px 0;max-width:480px}
+.writing-feature .button,.writing-feature .text-link{margin-top:16px}
+.writing-link-note{display:block;font-size:10px;line-height:1.7;color:var(--muted);margin-top:13px}
+@media(max-width:850px){.header-inner nav{gap:17px}.writing-feature{padding:26px}.writing-feature h3{font-size:27px}}
+@media(max-width:600px){.writing-grid{grid-template-columns:1fr;gap:20px}.writing-feature h3{font-size:28px}.writing-feature>p:not(.eyebrow){font-size:13px}}
+
+.training-showcase{margin-top:32px;padding:36px;border:1px solid var(--line)}
+.training-showcase h3{font-size:30px;font-weight:500;letter-spacing:-.8px;margin:18px 0}
+.training-showcase>p:not(.eyebrow){font-size:14px;line-height:1.85;color:var(--muted);max-width:750px}
+.training-links{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.training-links a{display:flex;align-items:center;gap:12px;border:1px solid var(--line);padding:17px;font-size:13px;color:var(--blue)}
+.training-links a:hover,.training-links a:focus-visible{background:var(--lime)}
+.training-links a span:first-child{font-size:10px;color:var(--muted)}.training-links a span:last-child{margin-left:auto}
+@media(max-width:850px){.training-links{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.training-showcase{padding:26px}.training-showcase h3{font-size:27px}.training-showcase>p:not(.eyebrow){font-size:13px}.training-links{grid-template-columns:1fr}}
+
+.recruitment-case{margin-top:48px;border-top:1px solid var(--line);padding-top:48px;scroll-margin-top:110px}
+.recruitment-intro{max-width:780px}.recruitment-intro h3{font-size:clamp(34px,4vw,53px);font-weight:500;line-height:1.1;letter-spacing:-1.8px;margin:22px 0}.recruitment-intro h3 em{color:var(--blue);font-family:Georgia,serif;font-weight:400}
+.recruitment-lede{font-size:18px;line-height:1.75;color:var(--muted)}
+.recruitment-story{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:35px 0 38px}.recruitment-story h4{font-size:19px;font-weight:500;margin-bottom:12px}.recruitment-story p{font-size:13px;line-height:1.85;color:var(--muted)}
+.recruitment-gallery{display:grid;grid-template-columns:1fr 1fr;gap:30px 24px;align-items:start}.recruitment-gallery figure{margin:0;min-width:0}.ad-viewport{position:relative;overflow:hidden;background:#196f8b;line-height:0}.ad-viewport img{display:block;max-width:none;height:auto;border:0;padding:0;margin:0}
+.ad-money{aspect-ratio:2048/1344}.ad-money img{width:100%}
+.ad-skills{aspect-ratio:1712/1142}.ad-skills img{position:absolute;width:119.626168%;left:-9.988318%;top:-5.429072%}
+.ad-banner-figure{grid-column:1/-1}.ad-banner{aspect-ratio:2048/392}.ad-banner img{width:100%;position:absolute;top:-.510204%}
+.recruitment-gallery figcaption{padding-top:14px;line-height:1.6}.recruitment-gallery figcaption strong{display:block;font-size:15px;font-weight:500}.recruitment-gallery figcaption span{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.recruitment-credit{border-block:1px solid var(--line);padding:18px 0;margin-top:28px}.recruitment-credit p{font-size:11px;color:var(--muted);line-height:1.8}.recruitment-credit strong{font-weight:600;color:var(--ink)}
+@media(max-width:850px){.recruitment-story{grid-template-columns:1fr;gap:22px}.recruitment-story p{max-width:690px}}
+@media(max-width:600px){.recruitment-case{padding-top:35px;margin-top:35px}.recruitment-lede{font-size:16px}.recruitment-gallery{grid-template-columns:1fr;gap:25px}.ad-banner-figure{grid-column:auto}.recruitment-gallery figcaption strong{font-size:14px}}
+
+.website-revamp{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:36px;margin-top:38px;background:var(--blue);color:white}.website-revamp .eyebrow{color:var(--lime);line-height:1.7}.website-revamp h3{font-size:42px;line-height:1.15;font-weight:500;letter-spacing:-1.5px;margin-top:22px}.website-revamp h3 em{font-family:Georgia,serif;font-weight:400;color:var(--lime)}.website-revamp p:not(.eyebrow){font-size:14px;line-height:1.8;margin-bottom:16px}.website-revamp .button{background:var(--lime);color:var(--ink);margin-top:8px}.live-site-link{margin-top:22px}
+@media(max-width:600px){.website-revamp{grid-template-columns:1fr;gap:24px;padding:26px}.website-revamp h3{font-size:36px}.website-revamp p:not(.eyebrow){font-size:13px}}
