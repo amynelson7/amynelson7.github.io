@@ -23,9 +23,9 @@
       <a class="wordmark" href="#home" aria-label="Amy Nelson home">amy nelson<span class="asterisk" aria-hidden="true"><svg class="star-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3v42M3 24h42M9 9l30 30M9 39 39 9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">＋</span></button>
       <nav id="main-nav" aria-label="Main navigation">
+        <a href="#about">About me</a>
         <a href="#work">Selected work</a>
         <a href="#writing">Writing</a>
-        <a href="#about">About me</a>
         <a href="#experience">Experience</a>
         <a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
       </nav>
@@ -34,22 +34,35 @@
 
   <main id="main">
     <section class="hero shell" id="home" aria-labelledby="hero-heading">
-      <div class="hero-copy">
-        <div class="eyebrow hero-eyebrow"><span class="status-dot" aria-hidden="true"></span> STORYTELLING & B2B MARKETING <span class="eyebrow-location">/ OMAHA, NE</span></div>
-        <h1 id="hero-heading">Stories that<br><em>make you care.</em></h1>
-        <p class="hero-intro">Hi, I’m Amy. I turn complex ideas into clear, compelling stories, backed by more than five years of B2B corporate marketing experience.</p>
-        <p class="hero-detail">From customer interviews to award-winning project narratives, I connect the details to the people and purpose behind the work.</p>
+      <div class="hero-copy" id="about">
+        <div class="eyebrow hero-eyebrow"><span class="status-dot" aria-hidden="true"></span> A LITTLE ABOUT ME <span class="eyebrow-location">/ OMAHA, NE</span></div>
+        <h1 id="hero-heading">Hi, I’m <em>Amy.</em></h1>
+        <p class="hero-intro">I was born and raised in Omaha, so being a Husker fan was pretty much decided for me. I have a soft spot for golden retrievers, especially my puppy, Ruby, who keeps me busy outside of work. And I’m convinced there’s nothing better than the first sip of coffee in the morning.</p>
+      </div>
+      <figure class="hero-portrait">
+        <div class="portrait-frame"><img src="assets/amy-nelson.jpg" width="800" height="800" alt="Amy Nelson smiling, wearing a blue blouse" fetchpriority="high"></div>
+        <figcaption class="portrait-note"><span class="handwritten">A storyteller’s eye.<br>A marketer’s mindset.</span><span class="note-star" aria-hidden="true"><svg class="star-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3v42M3 24h42M9 9l30 30M9 39 39 9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></figcaption>
+        <span class="portrait-index" aria-hidden="true">NICE TO MEET YOU</span>
+      </figure>
+    </section>
+
+    <section class="personal-story shell" aria-label="More about me">
+      <div class="personal-paragraphs">
+        <p>I love long-distance running and have completed five half marathons. I like having a goal to work toward, and running has taught me a lot about following through—even on the days when motivation is hard to find. That determination carries into my work, too.</p>
+        <p>I’m also an entrepreneur at heart. I’ll happily get caught up in an episode of <em>Shark Tank</em>, and owning a business someday is a dream I keep coming back to. I love thinking about what something could become and what it would take to get there.</p>
+      </div>
+      <p class="personal-values">Above everything, I value my faith, my family, and my friendships. They’re the most important parts of my life, and I want whatever I build professionally to reflect that.</p>
+    </section>
+
+    <section class="career-intro shell" aria-labelledby="career-intro-heading">
+      <div><p class="eyebrow">STORYTELLING &amp; B2B MARKETING</p><h2 id="career-intro-heading">A little about<br><em>my work.</em></h2></div>
+      <div class="career-intro-copy">
+        <p>My career started in copywriting and has grown into marketing, events, and managing projects with a lot of moving pieces. Writing is still my favorite part—especially talking with someone about their work, finding the details they might overlook, and turning those conversations into a story they’re proud to share.</p>
         <div class="hero-actions">
           <a class="button button-blue" href="#project-award-stories" data-project="award-stories">Read my stories <span aria-hidden="true">→</span></a>
           <a class="text-link resume-link" href="assets/Amy_Nelson_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span><span class="file-label">PDF</span></a>
         </div>
-        <div class="hero-caption"><span class="fine-rule"></span> A storyteller’s curiosity. A marketer’s perspective.</div>
       </div>
-      <figure class="hero-portrait">
-        <div class="portrait-frame"><img src="assets/amy-nelson.jpg" width="800" height="800" alt="Amy Nelson smiling, wearing a blue blouse" fetchpriority="high"></div>
-        <figcaption class="portrait-note"><span class="handwritten">People first.<br>Always curious.</span><span class="note-star" aria-hidden="true"><svg class="star-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3v42M3 24h42M9 9l30 30M9 39 39 9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></figcaption>
-        <span class="portrait-index" aria-hidden="true">THE PERSON BEHIND THE PROJECTS</span>
-      </figure>
     </section>
 
     <section class="breadth shell" aria-label="Experience at a glance">
@@ -224,13 +237,8 @@
       </div>
     </section>
 
-    <section class="about-section shell section-space" id="about" aria-labelledby="about-heading">
-      <div class="about-side"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><div class="about-monogram" aria-hidden="true">a<span>n</span><i><svg class="star-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3v42M3 24h42M9 9l30 30M9 39 39 9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></i></div><p class="about-location">ROOTED IN OMAHA.<br>ALWAYS LOOKING AHEAD.</p></div>
-      <div class="about-copy"><h2 id="about-heading">A people person<br>with a <em>project plan.</em></h2><p class="large-copy">I like finding the story someone hasn’t quite figured out how to tell yet.</p><p>My work starts with a question: what makes this story worth telling? I connect customer conversations, technical details, and the bigger picture to make complex work clear and compelling.</p><p>In more than five years of B2B corporate marketing at Valmont, I’ve progressed from copywriting intern to marketing specialist. My experience spans customer stories, digital campaigns, events, branding, website initiatives, and sales enablement.</p><p>I’m just as comfortable interviewing a customer as I am reviewing campaign performance, planning an event, or working through a creative brief. I enjoy connecting the story to the strategy, bringing people into the process, and keeping the work moving.</p><div class="about-tags"><span>Storyteller at heart</span><span>Details matter</span><span>Always learning</span></div></div>
-    </section>
-
     <section class="experience-section shell" id="experience" aria-labelledby="experience-heading">
-      <div class="section-heading"><div><p class="eyebrow">03 / EXPERIENCE & CAPABILITIES</p><h2 id="experience-heading">Built through<br><em>doing the work.</em></h2></div><a class="text-link resume-link" href="assets/Amy_Nelson_Resume.pdf" download>Get the full résumé <span aria-hidden="true">↓</span><span class="file-label">PDF</span></a></div>
+      <div class="section-heading"><div><p class="eyebrow">02 / EXPERIENCE & CAPABILITIES</p><h2 id="experience-heading">Built through<br><em>doing the work.</em></h2></div><a class="text-link resume-link" href="assets/Amy_Nelson_Resume.pdf" download>Get the full résumé <span aria-hidden="true">↓</span><span class="file-label">PDF</span></a></div>
       <div class="experience-layout">
         <div class="timeline">
           <article class="timeline-item"><div class="timeline-date">MAY 2022 — PRESENT</div><div><h3>Marketing Specialist</h3><p class="timeline-company">Valmont Industries, Inc. <span class="company-context">Fortune 1000 company</span></p><p>Marketing and communications support across 35+ coatings facilities, spanning customer stories, campaigns, events, brand initiatives, and sales enablement.</p></div></article>
@@ -259,7 +267,7 @@
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-heading">
-      <div class="shell contact-inner"><p class="eyebrow">04 / THE NEXT GOOD CONVERSATION</p><div class="contact-heading-row"><h2 id="contact-heading">Good things start<br>with <em>hello.</em></h2><span class="contact-star" aria-hidden="true"><svg class="star-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3v42M3 24h42M9 9l30 30M9 39 39 9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></div><div class="contact-bottom"><p>Looking for a storyteller on your marketing team?<br>I’d love to talk about your next marketing or communications opportunity.</p><a class="contact-email" href="mailto:amy7nelson@gmail.com">amy7nelson@gmail.com <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></span></a></div><div class="contact-links"><a href="https://www.linkedin.com/in/amy-nelson-112620158" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></span></a><a class="resume-link" href="assets/Amy_Nelson_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a><button id="copy-email" type="button">Copy email <span aria-hidden="true"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="12" height="12" stroke="currentColor" stroke-width="1.5"/><path d="M15 15v6H3V9h6" stroke="currentColor" stroke-width="1.5"/></svg></span></button><span class="copy-status" role="status" aria-live="polite"></span></div></div>
+      <div class="shell contact-inner"><p class="eyebrow">03 / THE NEXT GOOD CONVERSATION</p><div class="contact-heading-row"><h2 id="contact-heading">Good things start<br>with <em>hello.</em></h2><span class="contact-star" aria-hidden="true"><svg class="star-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3v42M3 24h42M9 9l30 30M9 39 39 9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></div><div class="contact-bottom"><p>Looking for a storyteller on your marketing team?<br>I’d love to talk about your next marketing or communications opportunity.</p><a class="contact-email" href="mailto:amy7nelson@gmail.com">amy7nelson@gmail.com <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></span></a></div><div class="contact-links"><a href="https://www.linkedin.com/in/amy-nelson-112620158" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></span></a><a class="resume-link" href="assets/Amy_Nelson_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a><button id="copy-email" type="button">Copy email <span aria-hidden="true"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="12" height="12" stroke="currentColor" stroke-width="1.5"/><path d="M15 15v6H3V9h6" stroke="currentColor" stroke-width="1.5"/></svg></span></button><span class="copy-status" role="status" aria-live="polite"></span></div></div>
     </section>
   </main>
 

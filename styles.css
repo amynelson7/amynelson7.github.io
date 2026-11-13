@@ -96,3 +96,39 @@
 
 .website-revamp{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:36px;margin-top:38px;background:var(--blue);color:white}.website-revamp .eyebrow{color:var(--lime);line-height:1.7}.website-revamp h3{font-size:42px;line-height:1.15;font-weight:500;letter-spacing:-1.5px;margin-top:22px}.website-revamp h3 em{font-family:Georgia,serif;font-weight:400;color:var(--lime)}.website-revamp p:not(.eyebrow){font-size:14px;line-height:1.8;margin-bottom:16px}.website-revamp .button{background:var(--lime);color:var(--ink);margin-top:8px}.live-site-link{margin-top:22px}
 @media(max-width:600px){.website-revamp{grid-template-columns:1fr;gap:24px;padding:26px}.website-revamp h3{font-size:36px}.website-revamp p:not(.eyebrow){font-size:13px}}
+
+
+/* A personal introduction before the professional work. */
+.hero .hero-intro{max-width:530px;font-size:19px;line-height:1.8}
+.hero .hero-eyebrow{margin-bottom:28px}
+.hero .portrait-note{gap:18px;padding:18px 22px}
+.hero .handwritten{font-size:23px}
+.personal-story{padding-bottom:64px}
+.personal-paragraphs{display:grid;grid-template-columns:1fr 1fr;gap:66px;font-size:16px;line-height:1.85}
+.personal-paragraphs p+p{margin-top:0}
+.personal-values{max-width:940px;margin:36px 0 0;padding-left:24px;border-left:3px solid var(--blue);font-family:var(--serif);font-size:23px;line-height:1.65}
+.career-intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:66px;padding-block:60px;border-top:1px solid var(--line)}
+.career-intro h2{font-size:clamp(38px,4.1vw,58px);line-height:1.09;font-weight:400;letter-spacing:-2.5px;margin-top:19px}
+.career-intro h2 em{color:var(--blue)}
+.career-intro-copy>p{font-size:17px;line-height:1.8}
+.experience-section{padding-top:95px}
+@media(max-width:850px){
+  .hero .hero-intro{font-size:17px;line-height:1.75}
+  .hero .handwritten{font-size:19px}
+  .hero .portrait-note{padding:15px 18px;gap:12px}
+  .personal-paragraphs,.career-intro{gap:32px}
+  .personal-paragraphs{font-size:15px}
+  .personal-values{font-size:21px}
+  .career-intro-copy>p{font-size:16px}
+}
+@media(max-width:600px){
+  .hero .hero-intro{font-size:16px;line-height:1.8;margin-top:24px}
+  .hero .handwritten{font-size:20px}
+  .personal-story{padding-bottom:38px}
+  .personal-paragraphs{grid-template-columns:1fr;gap:22px;font-size:16px;line-height:1.8}
+  .personal-values{font-size:21px;line-height:1.6;margin-top:28px;padding-left:18px}
+  .career-intro{grid-template-columns:1fr;gap:24px;padding-block:38px}
+  .career-intro h2{font-size:38px;letter-spacing:-1.8px;margin-top:14px}
+  .career-intro .hero-actions{gap:20px}
+  .experience-section{padding-top:55px}
+}
